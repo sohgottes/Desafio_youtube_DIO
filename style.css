@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+body {
+  background: #fff;
+  color: #000;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  height: 20px;
+}
+.center-section {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.search-input {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+}
+.search-btn {
+  padding: 8px 16px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+}
+.right-section {
+  display: flex;
+  gap: 16px;
+  font-size: 18px;
+}
+.main {
+  display: flex;
+  transition: all 0.3s ease;
+}
+.sidebar {
+  width: 220px;
+  background: #fff;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar li {
+  margin: 15px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+.content {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  gap: 20px;
+}
+.video-area {
+  flex: 2;
+}
+.video-frame iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 12px;
+}
+.video-title {
+  font-size: 20px;
+  margin: 12px 0;
+}
+.video-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.video-description {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+#desc-text {
+  overflow: hidden;
+}
+
+#desc-text.collapsed #more-text {
+  display: none;
+}
+
+#toggle-btn {
+  background: none;
+  border: none;
+  color: #065fd4;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.video-comments {
+  margin-top: 30px;
+  max-width: 800px;
+}
+
+.video-comments h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.comment {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.comment .avatar {
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-content {
+  background: #f1f1f1;
+  padding: 10px 14px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.comment-author {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.comment-text {
+  font-size: 14px;
+  color: #333;
+}
+
+
+.channel-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.channel-avatar {
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+  border-radius: 50%;
+}
+.subscribe-btn {
+  margin-left: 12px;
+  padding: 8px 16px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.actions button {
+  margin-left: 8px;
+  padding: 6px 12px;
+}
+.suggestions-area {
+  flex: 1;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.tags span {
+  background: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.suggestion {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.thumb img {
+  width: 120px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.details .title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.details .meta {
+  font-size: 12px;
+  color: #555;
+}
